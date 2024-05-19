@@ -25,7 +25,7 @@ int main() {
 			if (message != receive)
 				++err_count;
 		}
-		fprintf(plot, "%e %e\n", snr_db, (double) err_count / TEST_COUNT);
+		fprintf(plot, "%e %e\n", disp, (double) err_count / TEST_COUNT);
 	}
 	fclose(plot);
 	return 0;
